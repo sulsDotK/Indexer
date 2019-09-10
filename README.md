@@ -19,7 +19,7 @@ tokens suitable for indexing. Tokenizer follows these steps:
 o docids.txt – A file mapping a document's filename (without path) to a unique
 integer, its DOCID. Each line should be formatted with a DOCID and filename
 separated by a tab, as follows:
-1234\tclueweb12-0000tw-13-04988
+-- 1234\tclueweb12-0000tw-13-04988
 -- termids.txt – A file mapping a token found during tokenization to a unique integer, its TERMID. 
 Each line is formatted with a TERMID and token separated by a tab, as follows:
 567\tasparagus
@@ -61,6 +61,7 @@ first symbol you see is the TERMID.
 -- 315: The total number of documents in which the term appears
 
 Part 3: Reading the index
+
 Now that we have an inverted index of the corpus, we'll want to be able to do something with
 it. For now, we will just write the code to pull up some statistics from the index. 
 A program which implements the following command line interface. It looks up the offset in
